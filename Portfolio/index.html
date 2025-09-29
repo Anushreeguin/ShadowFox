@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushree Guin - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+
+            </div>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Particle Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="typing-text">Hello, I'm</span>
+                        <br>
+                        <span class="name-highlight">Anushree Guin</span>
+                    </h1>
+                    <p class="hero-subtitle">Aspiring Full Stack Web Developer</p>
+                    <p class="hero-description">
+                        I am currently pursuing a B.E. in Information Technology (3rd year). Passionate about front-end
+                        and back-end web development, I am learning React.js, UI/UX design, and exploring AI/ML to build
+                        scalable and user-friendly applications.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="images/IMG_20250827_203826.jpg" alt="Anushree Guin" class="profile-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>A passionate learner and developer</h3>
+                    <p>
+                        I am Anushree Guin, an enthusiastic engineering student with a keen interest in web development
+                        and AI/ML. I enjoy creating visually appealing and efficient applications that solve real-world
+                        challenges.
+                    </p>
+                    <p>
+                        Currently, I am advancing my skills in JavaScript, React.js, UI/UX, and backend technologies. My
+                        goal is to become a Full Stack Developer while exploring opportunities to integrate AI/ML into
+                        web applications.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>10+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h4>2+</h4>
+                            <p>Years Coding</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-img-container">
+                        <img src="images/IMG_20250827_203826.jpg" alt="About Me">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">What I bring to the table</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <h3>Front-End Development</h3>
+                    <p>HTML, CSS, JavaScript, React.js</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Back-End Development</h3>
+                    <p>Node.js, Express.js, SQL</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p>Wireframing, Figma, Responsive Design</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI/ML Basics</h3>
+                    <p>Python, Pandas, Scikit-learn</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="65%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Education</h2>
+                <p class="section-subtitle">My journey in Web Development Learning</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023- 2027 - Present</div>
+                        <h3>B.E. Information Technology</h3>
+                        <h4>3rd Year Student</h4>
+                        <p>Currently pursuing my degree in IT with focus on Web Development and AI/ML. Exploring
+                            front-end and back-end technologies with practical projects.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Front-end</span>
+                            <span class="skill-tag">Back-end</span>
+                            <span class="skill-tag">Data Structure</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - 2025</div>
+                        <h3>>Projects & Internships</h3>
+                        <h4>Hands-on Experience</h4>
+                        <p>Worked on multiple projects including Netflix Clone Website, portfolio websites, calculators,
+                            and restaurant websites. Internship experience in web development</p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Javascript</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024</div>
+                        <h3>Competitions & Exams</h3>
+                        <h4>Active Participation</h4>
+                        <p>Participated in Kshitij Kascade, IIT Kharagpur (Kshitij 2024), Brain Battle Season 2, Amazon
+                            Summer ML Internship entrance exam, and Tata GenAI powered Data Analytics Job Simulation.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Gen AI</span>
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/f6b6868f-0450-44db-a258-e0920123fae2.jpg" alt="Calculator Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Calculator Project</h3>
+                        <p>My first project using HTML, CSS, and JavaScript during my Web Development Internship.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/restfood-restaurant-one-page-html5-website-template_255812-original.png"
+                            alt="Restaurant Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Restaurant Website</h3>
+                        <p>A responsive website with menus, reservations, and event details to enhance customer dining
+                            experience.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Screenshot 2025-08-29 111507.png" alt="Portfolio Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>My personal portfolio showcasing my skills, education, projects, and contact details.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Netflix clone website.png" alt="Netflix Clone Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Netflix Clone Website</h3>
+                        <p>Netflix Clone Website using only Html and CSS.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Screenshot 2025-08-30 131024.png" alt="Tic Tac Toe Game">
+                    </div>
+                    <div class="project-info">
+                        <h3>
+                            <Table>Tic Tac Toe Game</Table>
+                        </h3>
+                        <p>A responsive game website in which two players can play the game at a time using core
+                            knowledge of Javascript .</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Currency convertor.png" alt="Currency Convertor">
+                    </div>
+                    <div class="project-info">
+                        <h3>Currency Convertor</h3>
+                        <p>A Currency Convertor Website using Html, CSS and JS which converts any country's currency in
+                            your desired currency</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Testimonials</h2>
+                <p class="section-subtitle">What people say about me</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <p>"Anushree is a dedicated learner and developer. Her work on web development projects shows
+                            great creativity and consistency."</p>
+                        <div class="testimonial-author">
+                            <h4>Mentor - Internship</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Her passion for technology and continuous improvement is inspiring. She learns quickly and
+                            applies knowledge effectively."</p>
+                        <div class="testimonial-author">
+                            <h4>Professor - IT Department</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Anushree's portfolio and projects reflect her determination to become a skilled Full Stack
+                            Developer."</p>
+                        <div class="testimonial-author">
+                            <h4>Peer Collaborator</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>guin.anushree04@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 7992372146</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Kolkata, West Bengal, India</p>
+                        </div>
+                    </div>
+                     <div class="social-links">
+                        <a href="https://www.linkedin.com/in/anushreeguin/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Anushreeguin" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/anushree_guin04" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Anushree Guin | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
